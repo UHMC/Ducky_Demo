@@ -37,15 +37,54 @@
 <p>This site is for the use of all participants in the COMPETITION_NAME. Resources are made available for download above either as a zip file or gzipped tarball (for you Linux Lovers&#8482; out there).</p>
 
 <h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction to Rubber Ducky</h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+<p>The Rubber Ducky is a microcontroller USB that acts like a keyboard when plugged into a computer and executes a set of instructions that you load into it. This does not mean that you can put malicious files and have the victim computer run them. When creating a Rubber Ducky executable, you have to pretend you're at your victim's computer typing. Will you open a run prompt and use the command line or open a powershell prompt? That's all up to you.</p>
 
 <h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Writing our first DuckyScript file</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
+<p>The heart of Rubber Ducky is the simple scripting language used to create payloads. 
+</br></br>Here's the list of commands:
+</br>
+<ul>
+<li>REM</li>
+<li>DEFAULT_DELAY</li>
+<li>DELAY</li>
+<li>STRING</li>
+<li>GUI</li>
+<li>MENU</li>
+<li>SHIFT</li>
+<li>ALT</li>
+<li>CONTROL</li>
+<li>LEFTARROW</li>
+<li>RIGHTARROW</li>
+<li>DOWNARROW</li>
+<li>UPARROW</li>
+<li>BREAK</li>
+<li>CAPSLOCK</li>
+<li>DELETE</li>
+<li>END</li>
+<li>ESCAPE</li>
+<li>HOME</li>
+<li>INSERT</li>
+<li>NUMLOCK</li>
+<li>PAGEUP</li>
+<li>PAGEDOWN</li>
+<li>PRINTSCREEN</li>
+<li>SCROLLOCK</li>
+<li>SPACE</li>
+<li>TAB</li>
+</ul>
+For more information on these commands, please go <a href="http://usbrubberducky.com/#!duckyscript.md" target="_blank">here</a> </p>
+<p>Let's create a simple Rubber Ducky payload that opens notepad and types in "Hello students!" Open your favorite text editor and type in the following:</p><code>REM This only works against a Windows victim!</br>
+GUI r</br>
+DELAY 100</br>
+STRING notepad.exe</br>
+ENTER</br>
+DELAY 100</br>
+STRING Hello students!</br></code>
+<p>Save the file as inject.txt and Congratulations! You have just created your first DuckyScript! Find how to encode and load it onto your Rubber Ducky in the next section.
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting the payload to the target</h3>
 
