@@ -1,132 +1,166 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Ducky Demo : Repository for hosting the Rubber Ducky demo resources.">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Ducky Demo</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/UHMC/Ducky_Demo">View on GitHub</a>
-
-          <h1 id="project_title">Ducky Demo</h1>
-          <h2 id="project_tagline">UHMC Cybersecurity's Rubber Ducky demo site</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/UHMC/Ducky_Demo/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/UHMC/Ducky_Demo/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Ducky Demo</h3>
-
-<p>This site is for the use of all participants in the COMPETITION_NAME. Resources are made available for download above either as a zip file or gzipped tarball (for you Linux Lovers&#8482; out there).</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction to Rubber Ducky</h3>
-
-<p>The Rubber Ducky is a microcontroller USB that acts like a keyboard when plugged into a computer and executes a set of instructions that you load into it. This does not mean that you can put malicious files and have the victim computer run them. When creating a Rubber Ducky executable, you have to pretend you're at your victim's computer typing. Will you open a run prompt and use the command line or open a powershell prompt? That's all up to you.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Writing our first DuckyScript file</h3>
-
-<p>The heart of Rubber Ducky is the simple scripting language used to create payloads. 
-</br></br>Here's the list of commands:
-</br>
-<ul>
-<li>REM</li>
-<li>DEFAULT_DELAY</li>
-<li>DELAY</li>
-<li>STRING</li>
-<li>GUI</li>
-<li>MENU</li>
-<li>SHIFT</li>
-<li>ALT</li>
-<li>CONTROL</li>
-<li>LEFTARROW</li>
-<li>RIGHTARROW</li>
-<li>DOWNARROW</li>
-<li>UPARROW</li>
-<li>BREAK</li>
-<li>CAPSLOCK</li>
-<li>DELETE</li>
-<li>END</li>
-<li>ESCAPE</li>
-<li>HOME</li>
-<li>INSERT</li>
-<li>NUMLOCK</li>
-<li>PAGEUP</li>
-<li>PAGEDOWN</li>
-<li>PRINTSCREEN</li>
-<li>SCROLLOCK</li>
-<li>SPACE</li>
-<li>TAB</li>
-</ul>
-For more information on these commands, please go <a href="http://usbrubberducky.com/#!duckyscript.md" target="_blank">here</a> </p>
-<p>Let's create a simple Rubber Ducky payload that opens notepad and types in "Hello students!" Open your favorite text editor and type in the following:</p><code>REM This only works against a Windows victim!</br>
-GUI r</br>
-DELAY 100</br>
-STRING notepad.exe</br>
-ENTER</br>
-DELAY 100</br>
-STRING Hello students!</br></code>
-<p>Save the file as inject.txt and Congratulations! You have just created your first DuckyScript! Find how to encode and load it onto your Rubber Ducky in the next section.
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting the payload to the target</h3>
-
-<p>So, you've got yourself a script. Now what? Let's cover how you would get your script deployed on the Rubber ducky...</p>
-<ol>
-	<li>
-		If you don't have Java installed, you'll need it. The encoder that translates DuckyScript is part of a jar file. You can download Java
-		<a href="https://java.com/en/download/">here</a>.
-	</li>
-	<li>
-		TEXT
-	</li>
-	<li>
-		TEXT
-	</li>
-	<li>
-		TEXT
-	</li>
-	<li>
-		TEXT
-	</li>
-	<li>
-		TEXT
-	</li>
-</ol>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Ducky Demo maintained by <a href="https://github.com/UHMC">UHMC</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+	<head>
+		<meta charset='utf-8'/>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+		<meta name="description" content="Ducky Demo : Repository for hosting the Rubber Ducky demo resources."/>
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css"/>
+		<title>
+			Ducky Demo
+		</title>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<div id="header_wrap" class="outer">
+			<header class="inner">
+				<a id="forkme_banner" href="https://github.com/UHMC/Ducky_Demo">View on GitHub</a>
+				<h1 id="project_title">
+					Ducky Demo
+				</h1>
+				<h2 id="project_tagline">
+					UHMC Cybersecurity's Rubber Ducky demo site
+				</h2>
+				<section id="downloads">
+					<a class="zip_download_link" href="https://github.com/UHMC/Ducky_Demo/zipball/master">Download this project as a .zip file</a>
+					<a class="tar_download_link" href="https://github.com/UHMC/Ducky_Demo/tarball/master">Download this project as a tar.gz file</a>
+				</section>
+			</header>
+		</div>
+		<!-- MAIN CONTENT -->
+		<div id="main_content_wrap" class="outer">
+			<section id="main_content" class="inner">
+				<h3>
+					<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
+						<span aria-hidden="true" class="octicon octicon-link"/>
+					</a>
+					Welcome to Ducky Demo
+				</h3>
+				<p>
+					This site is for the use of all participants in the COMPETITION_NAME. Resources are made available for download above either as a zip file or gzipped tarball (for you Linux Lovers&#8482; out there).
+				</p>
+				<h3>
+					<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true">
+						<span aria-hidden="true" class="octicon octicon-link"/>
+					</a>
+					Introduction to Rubber Ducky
+				</h3>
+				<p>
+					The Rubber Ducky is a microcontroller USB that acts like a keyboard when plugged into a computer and executes a set of instructions that you load into it. This does not mean that you can put malicious files and have the victim computer run them. When creating a Rubber Ducky executable, you have to pretend you're at your victim's computer typing. Will you open a run prompt and use the command line or open a powershell prompt? That's all up to you.
+				</p>
+				<h3>
+					<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true">
+						<span aria-hidden="true" class="octicon octicon-link"/>
+					</a>
+					Writing our first DuckyScript file
+				</h3>
+				<p>
+					The heart of Rubber Ducky is the simple scripting language used to create payloads. 
+					<br/>
+					<br/>
+					Here's the list of commands:
+					<ul>
+						<li>REM</li>
+						<li>DEFAULT_DELAY</li>
+						<li>DELAY</li>
+						<li>STRING</li>
+						<li>GUI</li>
+						<li>MENU</li>
+						<li>SHIFT</li>
+						<li>ALT</li>
+						<li>CONTROL</li>
+						<li>LEFTARROW</li>
+						<li>RIGHTARROW</li>
+						<li>DOWNARROW</li>
+						<li>UPARROW</li>
+						<li>BREAK</li>
+						<li>CAPSLOCK</li>
+						<li>DELETE</li>
+						<li>END</li>
+						<li>ESCAPE</li>
+						<li>HOME</li>
+						<li>INSERT</li>
+						<li>NUMLOCK</li>
+						<li>PAGEUP</li>
+						<li>PAGEDOWN</li>
+						<li>PRINTSCREEN</li>
+						<li>SCROLLOCK</li>
+						<li>SPACE</li>
+						<li>TAB</li>
+					</ul>
+					For more information on these commands, please go <a href="http://usbrubberducky.com/#!duckyscript.md" target="_blank">here</a>.
+				</p>
+				<p>
+					Let's create a simple Rubber Ducky payload that opens notepad and types in "Hello students!" Open your favorite text editor and type in the following:
+				</p>
+				<code>
+					REM This only works against a Windows victim!
+					<br/>
+					GUI r
+					<br/>
+					DELAY 100
+					<br/>
+					STRING notepad.exe
+					<br/>
+					ENTER
+					<br/>
+					DELAY 100
+					<br/>
+					STRING Hello students!
+					<br/>
+				</code>
+				<p>
+					Save the file as inject.txt and Congratulations! You have just created your first DuckyScript! Find how to encode and load it onto your Rubber Ducky in the next section.
+				</p>
+				<h3>
+					<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true">
+						<span aria-hidden="true" class="octicon octicon-link"/>
+					</a>
+					Getting the payload to the target
+				</h3>
+				<p>
+					So, you've got yourself a script. Now what? Let's cover how you would get your script deployed on the Rubber ducky...
+				</p>
+				<ol>
+					<li>
+						If you don't have Java installed, you'll need it. The encoder that translates DuckyScript is part of a jar file. You can download Java <a href="https://java.com/en/download/" target="_blank">here</a>.
+					</li>
+					<li>
+						TEXT
+					</li>
+					<li>
+						TEXT
+					</li>
+					<li>
+						TEXT
+					</li>
+					<li>
+						TEXT
+					</li>
+					<li>
+						TEXT
+					</li>
+				</ol>
+				<h3>
+					<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true">
+						<span aria-hidden="true" class="octicon octicon-link"/>
+					</a>
+					Support or Contact
+				</h3>
+				<p>
+					Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a>, and we’ll help you sort it out.
+				</p>
+			</section>
+		</div>
+		<!-- FOOTER  -->
+		<div id="footer_wrap" class="outer">
+			<footer class="inner">
+				<p class="copyright">
+					Ducky Demo maintained by <a href="https://github.com/UHMC">UHMC</a>
+				</p>
+				<p>
+					Published with <a href="https://pages.github.com">GitHub Pages</a>
+				</p>
+			</footer>
+		</div>
+	</body>
 </html>
