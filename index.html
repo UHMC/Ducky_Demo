@@ -118,27 +118,61 @@
 					Getting the payload to the target
 				</h3>
 				<p>
-					So, you've got yourself a script. Now what? Let's cover how you would get your script deployed on the Rubber ducky...
+					So, you've got yourself a script. Now what? Let's cover how you would get your script deployed on the Rubber Ducky...
 				</p>
 				<ol>
 					<li>
-						If you don't have Java installed, you'll need it. The encoder that translates DuckyScript is part of a jar file. You can download Java <a href="https://java.com/en/download/" target="_blank">here</a>.
+						If you don't have Java installed, you'll want to get it, because the encoder that translates DuckyScript is part of a jar file.
+						You can download Java <a href="https://java.com/en/download/" target="_blank">here</a>.
 					</li>
+					<br/>
+					<li>
+						Next, download and unzip the <a href="https://github.com/hak5darren/USB-Rubber-Ducky/archive/master.zip" target="_blank">USB-Rubber-Ducky zip file</a>.
+						<br/>
+						Make sure that the unzipped folder resides in the same directory as your inject.txt file, or you'll need to edit the command in step 5 to compensate.
+					</li>
+					<br/>
+					<li>
+						Open a command prompt* or terminal**.
+						<br/>
+						<br/>
+						*On Windows, press WIN+R. Then type "cmd" and hit ENTER.
+						<br/>
+						**On Ubuntu Linux, press CTRL+ALT+T.
+						<br/>
+						For other operating systems, please see your OS-specific documentation.
+					</li>
+					<br/>
+					<li>
+						In the prompt or terminal, navigate to the directory you unzipped the Rubber Ducky zip file to, then to the Encoder directory within it.
+					</li>
+					<br/>
+					<li>
+						Type or copy & paste "java -jar encoder.jar -i ../../inject.txt -o ../../inject.bin" without the quotes and hit enter.
+						<br/>
+						You should see a short printout telling you that everything went okay. If not, you'll need to troubleshoot before moving on to the next step.
+					</li>
+					<br/>
+					<li>
+						Once you have an inject.bin file (it should be in the same directory as your inject.txt file if your command was the same), you'll need to need to transfer it to the MicroSD card via the MicroSD to USB adaptor.
+					</li>
+					<br/>
 					<li>
 						TEXT
 					</li>
+					<br/>
 					<li>
 						TEXT
 					</li>
+					<br/>
 					<li>
 						TEXT
 					</li>
+					<br/>
 					<li>
 						TEXT
 					</li>
-					<li>
-						TEXT
-					</li>
+					<br/>
 				</ol>
 				<h3>
 					<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true">
